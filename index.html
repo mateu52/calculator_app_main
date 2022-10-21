@@ -8,11 +8,12 @@
   
   <title>Frontend Mentor | Calculator app</title>
   <link rel="stylesheet" href="./style/style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
   <div class="calc">
-
+    <p id="demo">Hello</p>
     <div class="header">
       <div class="name bgin">calc</div>
       <a class="theme bgin"></a>
@@ -24,24 +25,28 @@
 
     <div class="numkey">
       <div class="btons">
-        <button data-all-clear class="span-two">AC</button>
-        <button data-delete>DEL</button>
-        <button data-operation>÷</button>
-        <button data-number>1</button>
-        <button data-number>2</button>
-        <button data-number>3</button>
-        <button data-operation>*</button>
-        <button data-number>4</button>
-        <button data-number>5</button>
-        <button data-number>6</button>
-        <button data-operation>+</button>
-        <button data-number>7</button>
-        <button data-number>8</button>
-        <button data-number>9</button>
-        <button data-operation>-</button>
-        <button data-number>.</button>
-        <button data-number>0</button>
-        <button data-equals class="span-two">=</button>
+        <div class="output">
+          <div class="previous-operand key"></div>
+          <div class="current-operand key"></div>
+        </div>  
+        <button class="data-all-clear key" class="ac" value="AC">AC</button>
+        <button class="data-delete key" value="DEL">DEL</button>
+        <button class="data-operation key" value="÷">÷</button>
+        <button class="data-number key" value="1">1</button>
+        <button class="data-number key" value="2">2</button>
+        <button class="data-number key" value="3">3</button>
+        <button class="data-operation key" value="*">*</button>
+        <button class="data-number key" value="4">4</button>
+        <button class="data-number key" value="5">5</button>
+        <button class="data-number key" value="6">6</button>
+        <button class="data-operation key" value="+">+</button>
+        <button class="data-number key" value="7">7</button>
+        <button class="data-number key" value="8">8</button>
+        <button class="data-number key" value="9">9</button>
+        <button class="data-operation key" value="-">-</button>
+        <button class="data-number key" value=",">,</button>
+        <button class="data-number key" value="0">0</button>
+        <button data-equals class="span-two key" value="=">=</button>
       </div>
     </div>
 
@@ -53,6 +58,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="./script.js"></script>
+  <!-- <script src="./script.js"> -->
+  <!-- <script src="./script.js"> -->
+
+  </script>
 </body>
 </html>

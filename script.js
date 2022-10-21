@@ -1,5 +1,27 @@
-object.onclick = function showcommentform() {  
-    var data="Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='50'></textarea><br><input type='submit' value='comment'>";  
-      
-    document.getElementById('mylocation').innerHTML=data;  
-     }  
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const equalsButton = document.querySelector('[data-equals]')
+const deleteButton = document.querySelector('[data-delete]')
+const allClearButton = document.querySelector('[data-all-clear]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
+
+let currentOperand = ''
+let previousOperand = ''
+const operation = undefined
+
+const actualizSum = () => {
+    currentOperandTextElement.innerText = currentOperand
+    previousOperandTextElement.innerText = previousOperand
+}
+
+const addNumber = (number) => {
+    currentOperand = currentOperand.toString() + number.toString()
+}
+
+numberButtons.forEach((number) => {
+    number.addEventListener('click', () => {
+        addNumber(number.innerText)
+        actualizSum()
+    })
+})

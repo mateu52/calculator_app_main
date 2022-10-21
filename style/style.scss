@@ -15,7 +15,7 @@ body{
     
     min-height: 550px;
     min-width: 150px;
-    max-width: 300px;
+    max-width: 250px;
 }
 .header{
     min-height: 50px;
@@ -27,4 +27,35 @@ body{
 .numkey{
     background-color: $three-backg;
     min-height: 300px;
+    text-shadow: 4px red;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+.btons{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 13px 10px;
+    padding: 15px 0;
+}
+.btons button{
+    font-size: 19px;
+    font-weight: 800;
+    background-color: rgb(99, 59, 241);
+    border-color: rgb(160, 159, 255);
+}
+.data-all-clear{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.span-two{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0;
+    font-size: 25px;
+    color:rgb(0, 225, 255)
 }
